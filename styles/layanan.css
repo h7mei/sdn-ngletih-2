@@ -1,0 +1,268 @@
+/* ==================================================
+   LAYANAN PAGE
+   SDN NGLETIH 1
+================================================== */
+
+/* HERO */
+.layanan-hero{
+    position: relative;
+    overflow: hidden;
+    padding: 110px 0 90px;
+    background: linear-gradient(135deg,#176B87,#1F8BAF,#86B6F6);
+    color:#fff;
+}
+
+.layanan-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top right,
+    rgba(255,255,255,.15),
+    transparent 35%),
+    radial-gradient(circle at bottom left,
+    rgba(255,255,255,.08),
+    transparent 30%);
+}
+
+.layanan-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+/* Badge */
+
+.layanan-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 20px;
+    border-radius:50px;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(10px);
+    color:#fff;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+/* Title */
+
+.layanan-title{
+    font-size:58px;
+    font-weight:800;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.layanan-title span{
+    color:#EEF5FF;
+}
+
+/* Text */
+
+.layanan-text{
+    font-size:18px;
+    line-height:1.9;
+    opacity:.95;
+    max-width:600px;
+    margin-bottom:35px;
+}
+
+/* Hero Image */
+
+.layanan-image{
+    max-height:470px;
+    width:auto;
+    object-fit:contain;
+}
+
+/* ==================================================
+   SILADIK
+================================================== */
+
+.siladik-section{
+    padding:100px 0;
+    background:#EEF5FF;
+}
+
+/* Card */
+
+.layanan-card{
+    background:#fff;
+    border-radius:25px;
+    padding:40px;
+    height:100%;
+    transition:.35s;
+    border:1px solid rgba(23,107,135,.08);
+    box-shadow:0 15px 35px rgba(0,0,0,.05);
+}
+
+.layanan-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(23,107,135,.18);
+}
+
+/* Icon */
+
+.layanan-icon{
+    width:80px;
+    height:80px;
+    border-radius:22px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#176B87;
+    color:#fff;
+    font-size:35px;
+    margin-bottom:25px;
+}
+
+.layanan-card h3{
+    color:#176B87;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.layanan-card p{
+    color:#64748B;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.layanan-card ul{
+    padding-left:18px;
+    margin-bottom:0;
+}
+
+.layanan-card li{
+    margin-bottom:10px;
+    color:#475569;
+}
+
+/* ==================================================
+   INFO BOX
+================================================== */
+
+.layanan-info{
+    background:#fff;
+    padding:0 0 100px;
+}
+
+.info-box{
+    display:flex;
+    gap:25px;
+    align-items:flex-start;
+
+    background:linear-gradient(
+        135deg,
+        #176B87,
+        #1F8BAF
+    );
+
+    color:#fff;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 40px rgba(23,107,135,.18);
+}
+
+.info-box i{
+    font-size:45px;
+    color:#EEF5FF;
+}
+
+.info-box h4{
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.info-box p{
+    margin:0;
+    line-height:1.8;
+    color:rgba(255,255,255,.92);
+}
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.layanan-card .btn{
+    border-radius:50px;
+    padding:12px 20px;
+    font-weight:600;
+}
+
+.layanan-card .btn-primary{
+    background:#176B87;
+    border:none;
+}
+
+.layanan-card .btn-primary:hover{
+    background:#14566d;
+}
+
+.layanan-hero .btn-warning{
+    border-radius:50px;
+    padding:14px 28px;
+    font-weight:600;
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media(max-width:992px){
+
+    .layanan-hero{
+        text-align:center;
+        padding:90px 0 70px;
+    }
+
+    .layanan-title{
+        font-size:42px;
+    }
+
+    .layanan-text{
+        max-width:100%;
+        margin:auto auto 30px;
+    }
+
+    .layanan-image{
+        margin-top:40px;
+        max-height:320px;
+    }
+
+    .layanan-card{
+        padding:30px;
+    }
+
+    .info-box{
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .layanan-title{
+        font-size:34px;
+    }
+
+    .layanan-text{
+        font-size:16px;
+    }
+
+    .layanan-badge{
+        font-size:13px;
+        padding:8px 18px;
+    }
+
+    .layanan-image{
+        max-height:260px;
+    }
+
+}

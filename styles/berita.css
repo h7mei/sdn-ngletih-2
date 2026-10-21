@@ -1,0 +1,370 @@
+/* ===================================================
+   BERITA HERO
+=================================================== */
+
+.berita-hero{
+    background: linear-gradient(
+        135deg,
+        #176B87,
+        #86B6F6
+    );
+
+    color:#fff;
+    padding:110px 0 90px;
+    position:relative;
+    overflow:hidden;
+}
+
+.berita-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at top right,
+        rgba(255,255,255,.15),
+        transparent 35%),
+        radial-gradient(circle at bottom left,
+        rgba(255,255,255,.10),
+        transparent 35%);
+}
+
+.berita-hero .container{
+    position:relative;
+    z-index:2;
+}
+
+.berita-badge{
+    display:inline-flex;
+    align-items:center;
+    padding:10px 22px;
+    border-radius:50px;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.2);
+    backdrop-filter:blur(10px);
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.berita-title{
+    font-size:56px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.berita-subtitle{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+    opacity:.95;
+}
+
+/* ===================================================
+   SECTION BERITA
+=================================================== */
+
+.news-section{
+    padding:80px 0;
+    background:#EEF5FF;
+}
+
+.news-section:nth-child(even){
+    background:#ffffff;
+}
+
+/* ===================================================
+   CARD BERITA
+=================================================== */
+
+.news-card{
+    background:#fff;
+    border-radius:24px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(23,107,135,.08);
+    transition:.35s;
+}
+
+.news-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 45px rgba(23,107,135,.15);
+}
+
+/* ===================================================
+   CATEGORY
+=================================================== */
+
+.news-category{
+    display:inline-block;
+    background:#176B87;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+/* ===================================================
+   TITLE
+=================================================== */
+
+.news-title{
+    color:#176B87;
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+/* ===================================================
+   META
+=================================================== */
+
+.news-meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    color:#64748B;
+    margin-bottom:30px;
+}
+
+.news-meta span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.news-meta i{
+    color:#176B87;
+}
+
+/* ===================================================
+   GALERI
+=================================================== */
+
+.news-gallery{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+    border-radius:18px;
+    transition:.35s;
+    cursor:pointer;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.news-gallery:hover{
+    transform:scale(1.05);
+    box-shadow:0 15px 30px rgba(23,107,135,.20);
+}
+
+/* ===================================================
+   PARAGRAF
+=================================================== */
+
+.news-card p{
+    font-size:17px;
+    line-height:1.9;
+    color:#475569;
+    text-align:justify;
+}
+
+/* ===================================================
+   PEMBATAS
+=================================================== */
+
+.news-section:not(:last-child)::after{
+
+    content:"";
+
+    display:block;
+
+    width:180px;
+
+    height:3px;
+
+    background:#B4D4FF;
+
+    margin:70px auto 0;
+
+    border-radius:20px;
+
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:992px){
+
+    .berita-title{
+
+        font-size:42px;
+
+    }
+
+    .news-card{
+
+        padding:30px;
+
+    }
+
+    .news-title{
+
+        font-size:28px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .berita-hero{
+
+        padding:90px 0 70px;
+
+    }
+
+    .berita-title{
+
+        font-size:34px;
+
+    }
+
+    .berita-subtitle{
+
+        font-size:16px;
+
+    }
+
+    .news-card{
+
+        padding:25px;
+
+    }
+
+    .news-title{
+
+        font-size:24px;
+
+    }
+
+    .news-meta{
+
+        gap:15px;
+        font-size:14px;
+
+    }
+
+    .news-gallery{
+
+        height:200px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .news-gallery{
+
+        height:180px;
+
+    }
+
+    .news-card{
+
+        border-radius:18px;
+
+    }
+
+}
+
+/* =====================================
+   CARD GRID
+===================================== */
+
+.news-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+.news-gallery{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+}
+
+.news-card p{
+
+    flex-grow:1;
+
+    margin-bottom:0;
+
+}
+
+.news-card .btn{
+
+    border-radius:12px;
+
+    padding:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.news-card .btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.news-title{
+
+    font-size:24px;
+
+    line-height:1.4;
+
+    min-height:70px;
+
+}
+
+.news-category{
+
+    margin-bottom:15px;
+
+}
+
+.news-meta{
+
+    margin-bottom:20px;
+
+}
+   
+@media(max-width:768px){
+
+.news-title{
+
+    min-height:auto;
+
+    font-size:22px;
+
+}
+
+.news-gallery{
+
+    height:210px;
+
+}
+
+}

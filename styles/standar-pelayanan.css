@@ -1,0 +1,527 @@
+/* =====================================================
+   STANDAR PELAYANAN
+   SDN NGLETIH 1
+===================================================== */
+
+:root{
+
+    --sp-primary:#0D6EFD;
+    --sp-secondary:#4A9DFF;
+
+    --sp-dark:#0B3E91;
+
+    --sp-light:#F5F9FF;
+
+    --sp-white:#FFFFFF;
+
+    --sp-border:#D8E8FA;
+
+    --sp-text:#5D6B82;
+
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body{
+
+    background:#F5F8FD;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.sp-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:110px 0 90px;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--sp-primary),
+        var(--sp-secondary)
+    );
+
+}
+
+
+.sp-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    right:-120px;
+
+    top:-150px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+
+.sp-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    left:-80px;
+
+    bottom:-80px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+}
+
+
+.sp-hero-content{
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+
+.sp-badge{
+
+    display:inline-block;
+
+    padding:10px 25px;
+
+    border-radius:50px;
+
+    background:#fff;
+
+    color:var(--sp-primary);
+
+    font-weight:700;
+
+    font-size:15px;
+
+}
+
+
+.sp-hero h1{
+
+    margin-top:25px;
+
+    color:#fff;
+
+    font-size:52px;
+
+    font-weight:800;
+
+}
+
+
+.sp-hero p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    margin-top:20px;
+
+    color:rgba(255,255,255,.92);
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.sp-section{
+
+    padding:90px 0;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.sp-service-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    margin-bottom:60px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+
+/* Card Genap */
+
+.sp-card-even{
+
+    background:#EAF5FF;
+
+}
+
+
+.sp-service-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 50px rgba(13,110,253,.12);
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.sp-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+    padding-bottom:25px;
+
+    border-bottom:2px solid var(--sp-border);
+
+}
+
+
+.sp-number{
+
+    width:70px;
+
+    height:70px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--sp-primary),
+        var(--sp-secondary)
+    );
+
+    color:#fff;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.sp-header h2{
+
+    margin-bottom:10px;
+
+    color:var(--sp-primary);
+
+    font-weight:700;
+
+}
+
+
+.sp-header p{
+
+    margin:0;
+
+    color:var(--sp-text);
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================================
+   POSTER
+===================================================== */
+
+.sp-poster{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid var(--sp-border);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.07);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+
+.sp-poster:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(13,110,253,.15);
+
+}
+
+
+.sp-image{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:contain;
+
+    background:#fff;
+
+    padding:20px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+
+.sp-poster:hover .sp-image{
+
+    transform:scale(1.03);
+
+}
+
+
+.sp-title{
+
+    padding:18px;
+
+    text-align:center;
+
+    font-weight:700;
+
+    color:var(--sp-primary);
+
+    background:#F8FBFF;
+
+    border-top:1px solid var(--sp-border);
+
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.modal-content{
+
+    background:transparent;
+
+    border:none;
+
+}
+
+
+#previewImg{
+
+    width:100%;
+
+    border-radius:18px;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer{
+
+    background:#fff;
+
+    border-top:1px solid #E6EEF8;
+
+    padding:35px 0;
+
+}
+
+
+.footer p{
+
+    color:#0B5ED7;
+
+    font-weight:600;
+
+}
+
+
+.footer small{
+
+    color:#7E8CA5;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:1200px){
+
+.sp-image{
+
+    height:520px;
+
+}
+
+}
+
+
+@media (max-width:992px){
+
+.sp-hero{
+
+    padding:90px 0;
+
+}
+
+.sp-hero h1{
+
+    font-size:42px;
+
+}
+
+.sp-service-card{
+
+    padding:30px;
+
+}
+
+.sp-header{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.sp-image{
+
+    height:480px;
+
+}
+
+}
+
+
+@media (max-width:768px){
+
+.sp-hero{
+
+    padding:80px 0;
+
+}
+
+.sp-badge{
+
+    font-size:14px;
+
+}
+
+.sp-hero h1{
+
+    font-size:34px;
+
+}
+
+.sp-hero p{
+
+    font-size:16px;
+
+}
+
+.sp-service-card{
+
+    padding:20px;
+
+}
+
+.sp-number{
+
+    width:58px;
+
+    height:58px;
+
+    font-size:22px;
+
+}
+
+.sp-header h2{
+
+    font-size:24px;
+
+}
+
+.sp-image{
+
+    height:350px;
+
+}
+
+}
+
+
+@media (max-width:576px){
+
+.sp-image{
+
+    height:250px;
+
+}
+
+}

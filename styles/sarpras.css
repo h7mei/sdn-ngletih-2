@@ -1,0 +1,329 @@
+/* ==========================================
+   HERO SARPRAS
+========================================== */
+
+.sarpras-hero{
+
+    background: linear-gradient(
+        135deg,
+        #176B87,
+        #1E88A8
+    );
+
+    color:#fff;
+
+    padding:120px 0 90px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.sarpras-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        radial-gradient(circle at top right,
+        rgba(255,255,255,.15),
+        transparent 35%),
+
+        radial-gradient(circle at bottom left,
+        rgba(255,255,255,.08),
+        transparent 40%);
+
+}
+
+.sarpras-hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.sarpras-title{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    margin-bottom:20px;
+
+}
+
+.sarpras-title span{
+
+    color:#B4D4FF;
+
+}
+
+.sarpras-subtitle{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    opacity:.95;
+
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.sarpras-section{
+
+    background:#EEF5FF;
+
+    padding:90px 0;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.sarpras-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    margin-bottom:40px;
+
+    transition:.35s;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.sarpras-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+
+    0 20px 45px rgba(23,107,135,.18);
+
+}
+
+/* ==========================================
+   JUDUL
+========================================== */
+
+.sarpras-card h2{
+
+    color:#176B87;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.sarpras-card h2 i{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:15px;
+
+    background:#B4D4FF;
+
+    color:#176B87;
+
+    font-size:24px;
+
+}
+
+/* ==========================================
+   FOTO
+========================================== */
+
+.sarpras-img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    box-shadow:
+
+    0 6px 18px rgba(0,0,0,.08);
+
+}
+
+.sarpras-img:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   DESKRIPSI
+========================================== */
+
+.sarpras-card p{
+
+    margin-top:20px;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#4b5563;
+
+    text-align:justify;
+
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.section-badge{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    border-radius:50px;
+
+    background:#B4D4FF;
+
+    color:#176B87;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .sarpras-title{
+
+        font-size:42px;
+
+    }
+
+    .sarpras-card{
+
+        padding:28px;
+
+    }
+
+    .sarpras-card h2{
+
+        font-size:26px;
+
+    }
+
+    .sarpras-img{
+
+        height:200px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .sarpras-hero{
+
+        padding:90px 0 70px;
+
+    }
+
+    .sarpras-title{
+
+        font-size:34px;
+
+    }
+
+    .sarpras-subtitle{
+
+        font-size:16px;
+
+    }
+
+    .sarpras-card{
+
+        padding:22px;
+
+        border-radius:18px;
+
+    }
+
+    .sarpras-card h2{
+
+        font-size:22px;
+
+    }
+
+    .sarpras-card h2 i{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:20px;
+
+    }
+
+    .sarpras-img{
+
+        height:180px;
+
+        margin-bottom:12px;
+
+    }
+
+    .sarpras-card p{
+
+        font-size:15px;
+
+    }
+
+}

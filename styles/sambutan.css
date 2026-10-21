@@ -1,0 +1,231 @@
+/* ==========================
+   ROOT COLOR SAMBUTAN
+========================== */
+
+:root{
+    --sb-bg:#EEF5FF;
+    --sb-light:#B4D4FF;
+    --sb-mid:#86B6F6;
+    --sb-primary:#176B87;
+    --sb-white:#ffffff;
+    --sb-text:#334155;
+}
+
+/* ==========================
+   HERO SAMBUTAN
+========================== */
+
+.sambutan-hero{
+    position: relative;
+    padding: 120px 0 80px;
+    background: linear-gradient(
+        135deg,
+        var(--sb-primary),
+        var(--sb-mid)
+    );
+    overflow: hidden;
+}
+
+.sambutan-hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top right,
+    rgba(255,255,255,.12), transparent 35%),
+    radial-gradient(circle at bottom left,
+    rgba(255,255,255,.08), transparent 30%);
+}
+
+.sambutan-wrapper{
+    position: relative;
+    z-index: 2;
+}
+
+.sambutan-label{
+    display:inline-block;
+    padding:10px 18px;
+    border-radius:50px;
+    background:rgba(255,255,255,.15);
+    color:white;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.sambutan-title{
+    font-size:52px;
+    font-weight:800;
+    color:white;
+    margin-bottom:20px;
+}
+
+.sambutan-title span{
+    color:var(--sb-light);
+}
+
+.sambutan-desc{
+    max-width:700px;
+    margin:auto;
+    color:rgba(255,255,255,.9);
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* ==========================
+   SECTION CONTENT
+========================== */
+
+.sambutan-section{
+    padding:100px 0;
+    background:var(--sb-bg);
+}
+
+.sambutan-card{
+    background:var(--sb-white);
+    border-radius:30px;
+    padding:50px;
+    box-shadow:0 20px 40px rgba(23,107,135,.08);
+    border:1px solid rgba(23,107,135,.06);
+    transition:.3s;
+}
+
+.sambutan-card:hover{
+    transform:translateY(-5px);
+}
+
+/* ==========================
+   FOTO KEPSEK
+========================== */
+
+.kepsek-box{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.kepsek-photo{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid var(--sb-light);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    background:white;
+}
+
+.kepsek-name{
+    margin-top:25px;
+    font-size:30px;
+    font-weight:700;
+    color:var(--sb-primary);
+}
+
+.kepsek-position{
+    font-size:17px;
+    font-weight:500;
+    color:#64748b;
+}
+
+/* ==========================
+   ISI SAMBUTAN
+========================== */
+
+.sambutan-content{
+    margin-top:20px;
+}
+
+.sambutan-content p{
+    font-size:17px;
+    line-height:2;
+    color:var(--sb-text);
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+.sambutan-opening{
+    font-weight:600;
+    color:var(--sb-primary);
+}
+
+.sambutan-closing{
+    font-weight:700;
+    color:var(--sb-primary);
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.sambutan-btn{
+    display:inline-block;
+    padding:12px 28px;
+    border-radius:50px;
+    background:var(--sb-primary);
+    color:white;
+    font-weight:600;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.sambutan-btn:hover{
+    background:var(--sb-mid);
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .sambutan-title{
+        font-size:40px;
+    }
+
+    .sambutan-card{
+        padding:35px;
+    }
+
+    .kepsek-photo{
+        width:180px;
+        height:180px;
+    }
+
+    .kepsek-name{
+        font-size:26px;
+    }
+}
+
+@media(max-width:768px){
+
+    .sambutan-hero{
+        padding:100px 0 60px;
+    }
+
+    .sambutan-title{
+        font-size:32px;
+    }
+
+    .sambutan-desc{
+        font-size:16px;
+    }
+
+    .sambutan-card{
+        padding:25px;
+    }
+
+    .kepsek-photo{
+        width:150px;
+        height:150px;
+    }
+
+    .kepsek-name{
+        font-size:22px;
+    }
+
+    .sambutan-content p{
+        font-size:15px;
+        line-height:1.9;
+    }
+}
