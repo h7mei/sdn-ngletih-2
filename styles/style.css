@@ -321,6 +321,7 @@ body{
 
 /* Text */
 .hero-content{
+    padding-top: 48px;
     padding-bottom: 80px;
     position: relative;
     z-index: 2;
@@ -343,7 +344,8 @@ body{
 
 /* Title */
 .hero-title{
-    font-size: 62px;
+    /* Fluid: ~32px on phones up to 62px on wide screens */
+    font-size: clamp(2rem, 4.2vw, 3.875rem);
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -356,7 +358,7 @@ body{
 
 /* Text */
 .hero-text{
-    font-size: 18px;
+    font-size: clamp(1rem, 0.9rem + 0.4vw, 1.125rem);
     opacity: .95;
     line-height: 1.9;
     max-width: 90%;
@@ -415,10 +417,6 @@ body{
         padding-bottom: 20px;
     }
 
-    .hero-title{
-        font-size: 42px;
-    }
-
     .hero-text{
         max-width: 100%;
     }
@@ -446,12 +444,7 @@ body{
 ========================== */
 @media(max-width:768px){
 
-    .hero-title{
-        font-size: 34px;
-    }
-
     .hero-text{
-        font-size: 16px;
         text-align: center;
     }
 
@@ -1952,10 +1945,6 @@ body{
         text-align:center;
     }
 
-    .hero-title{
-        font-size:48px;
-    }
-
     .kepala-sekolah{
         width:220px;
         height:220px;
@@ -1965,10 +1954,6 @@ body{
 }
 
 @media(max-width:768px){
-
-    .hero-title{
-        font-size:36px;
-    }
 
     .section-title{
         font-size:30px;
