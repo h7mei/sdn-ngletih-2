@@ -926,7 +926,8 @@ body{
 ========================== */
 
 .visi-section{
-    background-image: url('/assets/images/bg-grey.jfif');
+    /* set in app/layout.tsx, image lives in Supabase Storage */
+    background-image: var(--visi-bg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1517,7 +1518,7 @@ body{
 .social-list {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
     gap: 10px;
 }
@@ -1525,6 +1526,8 @@ body{
 .social-item {
     display: flex;
     align-items: center;
+
+    min-width: 0;
 
     gap: 10px;
 
@@ -1542,12 +1545,13 @@ body{
 }
 
 .social-item > i {
+    flex-shrink: 0;
+
     font-size: 22px;
 }
 
 .social-item span {
-    display: flex;
-    flex-direction: column;
+    display: block;
 
     min-width: 0;
 
@@ -1555,9 +1559,13 @@ body{
     font-weight: 600;
 
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .social-item small {
+    display: block;
+
     margin-bottom: 2px;
 
     color: #94a3b8;

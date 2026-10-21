@@ -2,7 +2,7 @@ import Link from "next/link";
 import SwiperInit from "@/components/SwiperInit";
 import { createClient } from "@/lib/supabase/server";
 import type { Ekstrakurikuler, Galeri, Prestasi } from "@/lib/types";
-import { storagePublicUrl } from "@/lib/utils";
+import { assetUrl, storagePublicUrl } from "@/lib/utils";
 import "@/styles/sambutan.css";
 
 export default async function HomePage() {
@@ -61,7 +61,7 @@ export default async function HomePage() {
             <div className="col-lg-6 p-0">
               <div className="hero-image-wrapper">
                 <img
-                  src="/assets/images/hero.png"
+                  src={assetUrl("hero.png")}
                   className="hero-img"
                   alt="SDN Ngletih 1"
                 />
@@ -77,7 +77,7 @@ export default async function HomePage() {
           <div className="row align-items-center">
             <div className="col-lg-5 text-center">
               <img
-                src="/assets/images/kepala sekolah.jpeg"
+                src={assetUrl("kepala-sekolah.jpeg")}
                 className="img-fluid shadow kepala-sekolah"
                 alt="Kepala Sekolah"
               />

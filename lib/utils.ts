@@ -32,3 +32,8 @@ export function storagePublicUrl(
   if (!base || !bucket) return pathOrUrl;
   return `${base}/storage/v1/object/public/${bucket}/${pathOrUrl.replace(/^\/+/, "")}`;
 }
+
+// Site images (logo, hero, ...) uploaded by scripts/upload-assets.mjs to the "assets" bucket.
+export function assetUrl(path: string): string {
+  return storagePublicUrl(path, "assets");
+}

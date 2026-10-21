@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { assetUrl } from "@/lib/utils";
 
 export default function Navbar() {
   return (
@@ -6,7 +7,7 @@ export default function Navbar() {
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center fw-bold" href="/">
           <img
-            src="/assets/images/logo ngletih.png"
+            src={assetUrl("logo-ngletih.png")}
             alt="Logo SDN Ngletih 1"
             className="navbar-logo"
           />

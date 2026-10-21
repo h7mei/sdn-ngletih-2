@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import "./globals.css";
 import "@/styles/style.css";
+import { assetUrl } from "@/lib/utils";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   title: "SDN Ngletih 1",
   description: "Website profil SDN Ngletih 1 Kota Kediri",
   icons: {
-    icon: "/assets/images/logo ngletih.PNG",
+    icon: assetUrl("logo-ngletih.png"),
   },
 };
 
@@ -34,7 +35,12 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
       </head>
-      <body className={poppins.className}>
+      <body
+        className={poppins.className}
+        style={
+          { "--visi-bg": `url("${assetUrl("bg-grey.jfif")}")` } as React.CSSProperties
+        }
+      >
         {children}
         <BootstrapClient />
       </body>

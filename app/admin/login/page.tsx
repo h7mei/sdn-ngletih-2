@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
+import { assetUrl } from "@/lib/utils";
 
 export default function AdminLoginPage() {
   const router = useRouter();
@@ -81,7 +82,7 @@ export default function AdminLoginPage() {
       <div className="login-card">
         <div className="text-center">
           <img
-            src="/assets/images/logo ngletih.PNG"
+            src={assetUrl("logo-ngletih.png")}
             className="login-logo"
             alt="Logo SDN Ngletih 1"
           />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/informasi.css";
+import { assetUrl } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Legalisasi | SDN Ngletih 1",
@@ -43,7 +44,7 @@ export default function Page() {
 
           <div className="col-lg-5 text-center">
             <img
-              src="/assets/images/legalisasi.png"
+              src={assetUrl("legalisasi.png")}
               className="img-fluid layanan-image"
               alt="Legalisasi"
             />

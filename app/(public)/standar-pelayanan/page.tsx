@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/standar-pelayanan.css";
+import { assetUrl } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Standar Pelayanan | SDN Ngletih 1",
@@ -95,7 +96,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/spmb.jpeg"
+                <img src={assetUrl("standar/spmb.jpeg")}
                     alt="Standar Pelayanan SPMB"
                     className="img-fluid sp-image"
 
@@ -119,7 +120,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/spmb-alur.jpg"
+                <img src={assetUrl("standar/spmb-alur.jpg")}
                     alt="Alur Pelayanan SPMB"
                     className="img-fluid sp-image"
 
@@ -175,7 +176,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/legalisasi.jpeg"
+                <img src={assetUrl("standar/legalisasi.jpeg")}
                     className="img-fluid sp-image"
                     alt="Standar Pelayanan Legalisasi"
  />
@@ -198,7 +199,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/legalisasi-alur.jpg"
+                <img src={assetUrl("standar/legalisasi-alur.jpg")}
                     className="img-fluid sp-image"
                     alt="Alur Pelayanan Legalisasi"
  />
@@ -252,7 +253,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/mutasi.jpeg"
+                <img src={assetUrl("standar/mutasi.jpeg")}
                     alt="Standar Pelayanan Mutasi Siswa"
                     className="img-fluid sp-image"
 
@@ -276,7 +277,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/mutasi-alur.jpg"
+                <img src={assetUrl("standar/mutasi-alur.jpg")}
                     alt="Alur Pelayanan Mutasi Siswa"
                     className="img-fluid sp-image"
 
@@ -332,7 +333,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/pengganti.jpeg"
+                <img src={assetUrl("standar/pengganti.jpeg")}
                     className="img-fluid sp-image"
                     alt="Standar Pelayanan Pengajuan Surat Keterangan Pengganti Ijazah"
  />
@@ -355,7 +356,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/pengganti-alur.jpg"
+                <img src={assetUrl("standar/pengganti-alur.jpg")}
                     className="img-fluid sp-image"
                     alt="Alur Pelayanan Pengajuan Surat Keterangan Pengganti Ijazah"
  />
@@ -406,7 +407,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/kesalahan.jpeg"
+                <img src={assetUrl("standar/kesalahan.jpeg")}
                     alt="Standar Pelayanan Surat Keterangan Kesalahan Penulisan Ijazah"
                     className="img-fluid sp-image"
 
@@ -430,7 +431,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/kesalahan-alur.jpg"
+                <img src={assetUrl("standar/kesalahan-alur.jpg")}
                     alt="Alur Pelayanan Surat Keterangan Kesalahan Penulisan Ijazah"
                     className="img-fluid sp-image"
 
@@ -486,7 +487,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/piagam.jpeg"
+                <img src={assetUrl("standar/piagam.jpeg")}
                     className="img-fluid sp-image"
                     alt="Standar Pelayanan Pengajuan Sertifikat/Piagam Penghargaan"
  />
@@ -509,7 +510,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/piagam-alur.jpg"
+                <img src={assetUrl("standar/piagam-alur.jpg")}
                     className="img-fluid sp-image"
                     alt="Alur Pelayanan Pengajuan Sertifikat/Piagam Penghargaan"
  />
@@ -563,7 +564,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/kurikulum.jpeg"
+                <img src={assetUrl("standar/kurikulum.jpeg")}
                     alt="Standar Pelayanan Pengesahan Dokumen Kurikulum Satuan Pendidikan"
                     className="img-fluid sp-image"
 
@@ -587,7 +588,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/kurikulum-alur.jpg"
+                <img src={assetUrl("standar/kurikulum-alur.jpg")}
                     alt="Alur Pelayanan Pengesahan Dokumen Kurikulum Satuan Pendidikan"
                     className="img-fluid sp-image"
 
@@ -643,7 +644,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/uks.jpeg"
+                <img src={assetUrl("standar/uks.jpeg")}
                     className="img-fluid sp-image"
                     alt="Standar Pelayanan UKS"
  />
@@ -666,7 +667,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/uks-alur.jpg"
+                <img src={assetUrl("standar/uks-alur.jpg")}
                     className="img-fluid sp-image"
                     alt="Alur Pelayanan UKS"
  />
@@ -720,7 +721,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/perpustakaan.jpeg"
+                <img src={assetUrl("standar/perpustakaan.jpeg")}
                     alt="Standar Pelayanan Perpustakaan"
                     className="img-fluid sp-image"
 
@@ -744,7 +745,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/perpustakaan-alur.jpg"
+                <img src={assetUrl("standar/perpustakaan-alur.jpg")}
                     alt="Alur Pelayanan Perpustakaan"
                     className="img-fluid sp-image"
 
@@ -800,7 +801,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/kantin.jpeg"
+                <img src={assetUrl("standar/kantin.jpeg")}
                     className="img-fluid sp-image"
                     alt="Standar Pelayanan Kantin"
  />
@@ -823,7 +824,7 @@ export default function Page() {
 
             <div className="sp-poster">
 
-                <img src="/assets/images/standar/kantin-alur.jpg"
+                <img src={assetUrl("standar/kantin-alur.jpg")}
                     className="img-fluid sp-image"
                     alt="Alur Pelayanan Kantin"
  />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "@/styles/sambutan.css";
+import { assetUrl } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Sambutan Kepala Sekolah | SDN Ngletih 1",
@@ -36,7 +37,7 @@ export default function Page() {
                 {/* FOTO KEPSEK */}
                 <div className="kepsek-box">
 
-                    <img src="/assets/images/kepala sekolah.jpeg"
+                    <img src={assetUrl("kepala-sekolah.jpeg")}
                         className="kepsek-photo"
                         alt="Kepala Sekolah" />
 
